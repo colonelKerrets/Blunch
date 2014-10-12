@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.title = @"History";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,7 +35,11 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    return [NSString stringWithFormat:@"%li", (long)section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -45,8 +50,13 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BlunchHistoryTableCell" forIndexPath:indexPath];
+    UITableViewCell *blubber = [tableView dequeueReusableCellWithIdentifier:@"blunchHistoryTableViewCell" forIndexPath:indexPath];
+    BlunchHistoryTableViewCell *cell = (BlunchHistoryTableViewCell *) blubber;
     
+    //TODO: Hier weiter machen
+    cell.dayLabel.text = @"X";
+    cell.monthLabel.text = @"Month";
+    cell.nameLabel.text = @"MUSTERNAME";
     // Configure the cell...
     
     return cell;
