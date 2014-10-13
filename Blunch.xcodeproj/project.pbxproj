@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		ABA7614E19E9B12200822A77 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA7614C19E9B12200822A77 /* Montserrat-Bold.ttf */; };
 		ABA7614F19E9B12200822A77 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA7614D19E9B12200822A77 /* Montserrat-Regular.ttf */; };
+		ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */; };
+		ABB2C95519EBDFA000EB2CE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABB2C95419EBDFA000EB2CE6 /* Info.plist */; };
+		ABB2C95819EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */; };
 		ABD8355219E9185D00509FE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8355119E9185D00509FE3 /* main.m */; };
 		ABD8355519E9185D00509FE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8355419E9185D00509FE3 /* AppDelegate.m */; };
 		ABD8355B19E9185D00509FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD8355919E9185D00509FE3 /* Main.storyboard */; };
@@ -32,8 +35,12 @@
 /* Begin PBXFileReference section */
 		ABA7614C19E9B12200822A77 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		ABA7614D19E9B12200822A77 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchCheckInViewController.h; sourceTree = "<group>"; };
+		ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchCheckInViewController.m; sourceTree = "<group>"; };
+		ABB2C95419EBDFA000EB2CE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB2C95619EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchDrawPartnerViewController.h; sourceTree = "<group>"; };
+		ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchDrawPartnerViewController.m; sourceTree = "<group>"; };
 		ABD8354C19E9185D00509FE3 /* Blunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD8355019E9185D00509FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD8355119E9185D00509FE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD8355319E9185D00509FE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABD8355419E9185D00509FE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +120,10 @@
 				ABD8357B19E99E4B00509FE3 /* BlunchHistoryTableViewCell.h */,
 				ABD8357C19E99E4B00509FE3 /* BlunchHistoryTableViewCell.m */,
 				ABD8355919E9185D00509FE3 /* Main.storyboard */,
+				ABB2C95619EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.h */,
+				ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */,
+				ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */,
+				ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */,
 				ABD8355C19E9185D00509FE3 /* Images.xcassets */,
 				ABD8355E19E9185D00509FE3 /* LaunchScreen.xib */,
 				ABD8354F19E9185D00509FE3 /* Supporting Files */,
@@ -123,7 +134,7 @@
 		ABD8354F19E9185D00509FE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABD8355019E9185D00509FE3 /* Info.plist */,
+				ABB2C95419EBDFA000EB2CE6 /* Info.plist */,
 				ABD8355119E9185D00509FE3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -228,6 +239,7 @@
 			files = (
 				ABA7614E19E9B12200822A77 /* Montserrat-Bold.ttf in Resources */,
 				ABD8355B19E9185D00509FE3 /* Main.storyboard in Resources */,
+				ABB2C95519EBDFA000EB2CE6 /* Info.plist in Resources */,
 				ABD8356019E9185D00509FE3 /* LaunchScreen.xib in Resources */,
 				ABA7614F19E9B12200822A77 /* Montserrat-Regular.ttf in Resources */,
 				ABD8355D19E9185D00509FE3 /* Images.xcassets in Resources */,
@@ -249,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD8357D19E99E4B00509FE3 /* BlunchHistoryTableViewCell.m in Sources */,
+				ABB2C95819EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m in Sources */,
 				ABD8355519E9185D00509FE3 /* AppDelegate.m in Sources */,
 				ABD8357A19E96F2D00509FE3 /* BlunchHistoryTableViewController.m in Sources */,
+				ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */,
 				ABD8355219E9185D00509FE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
