@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wBc-cG-VCW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nzv-UP-DTk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -102,6 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mDS-9T-iLg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hik-gl-a3U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to check in for Blunch today?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-Xh-MMA">
@@ -137,6 +138,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="40" y="435" width="320" height="52"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="8pL-Tz-z1I" kind="push" id="Jbn-TJ-iDm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,14 +159,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="checkInNo" destination="LWT-x4-dgJ" id="4cU-E2-W6g"/>
-                        <outlet property="checkInYes" destination="jFT-kh-Uc2" id="01L-PQ-kUJ"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="t9v-DH-n1e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlz-dA-Fma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="999"/>
+            <point key="canvasLocation" x="2214" y="999"/>
         </scene>
         <!--Blunch Draw Partner View Controller-->
         <scene sceneID="eM6-bV-Soh">
@@ -173,6 +174,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hwi-Vs-6FQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UST-fT-vCX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're checked in. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-FM-j52">
@@ -208,6 +210,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="40" y="503" width="320" height="52"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="wBc-cG-VCW" kind="push" id="c8w-mM-oh2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -226,13 +231,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="seb-GX-n6b"/>
                     <connections>
                         <outlet property="drawPartnerButton" destination="33V-hX-x7E" id="do4-pm-bvZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlh-7c-8OB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2011.5" y="999"/>
+            <point key="canvasLocation" x="2931" y="1002"/>
         </scene>
         <!--Blunch Lottery View Controller-->
         <scene sceneID="rhw-6r-8pP">
@@ -243,6 +249,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ScI-KZ-Wjw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cgi-ps-p2G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-1n-XGB">
@@ -276,6 +283,15 @@
                                     <rect key="frame" x="36" y="112" width="320" height="110"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email segue | randomizer | confirmation screen &quot;check inbox&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-mf-LNw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="771" width="469" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -283,6 +299,7 @@
                                 <exclude reference="KTv-1n-XGB"/>
                                 <exclude reference="0Xm-Yi-t1T"/>
                                 <exclude reference="shH-Rp-E3a"/>
+                                <exclude reference="qi8-mf-LNw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -290,13 +307,18 @@
                                 <include reference="KTv-1n-XGB"/>
                                 <include reference="0Xm-Yi-t1T"/>
                                 <include reference="shH-Rp-E3a"/>
+                                <include reference="qi8-mf-LNw"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Vz1-O3-fEb"/>
+                    <connections>
+                        <outlet property="lotteryPicker" destination="KTv-1n-XGB" id="nwl-u0-N7d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHU-5O-AER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2701.5" y="1002"/>
+            <point key="canvasLocation" x="3598.5" y="1002"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OS7-Ue-Whq">
@@ -315,6 +337,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUN-D5-WJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="378" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6hb-XH-tDb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nzv-UP-DTk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yuo-b3-m0R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eaB-Ai-iTc" kind="relationship" relationship="rootViewController" id="foK-lr-54h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoZ-CW-qAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="999"/>
         </scene>
     </scenes>
 </document>
