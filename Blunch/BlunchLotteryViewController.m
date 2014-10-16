@@ -10,7 +10,7 @@
 
 @interface BlunchLotteryViewController ()
 
-@property NSArray *blunchNames;
+@property (strong, nonatomic) NSArray *blunchNames;
 @property (weak, nonatomic) IBOutlet UIPickerView *lotteryPicker;
 
 @end
@@ -36,7 +36,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [_lotteryPicker selectRow: (arc4random() % [_blunchNames
+    [self.lotteryPicker selectRow: (arc4random() % [self.blunchNames
                                                 count]) inComponent: 0 animated: YES];
 }
 
@@ -47,14 +47,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
     
-    self.blunchNames = @[@"Tanja", @"Ida", @"Sandra", @"Jonas", @"Paul", @"Petter"];    
+    self.blunchNames = @[@"Tanja", @"Ida", @"Sandra", @"Jonas", @"Paul", @"Petter"];
+    self.blunchNames = [self.blunchNames arrayByAddingObjectsFromArray: self.blunchNames];
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation
