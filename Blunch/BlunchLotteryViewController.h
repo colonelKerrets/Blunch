@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface BlunchLotteryViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface BlunchLotteryViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,MFMailComposeViewControllerDelegate>
+
+- (IBAction)showEmail:(id)sender;
 
 @end

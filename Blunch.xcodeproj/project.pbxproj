@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB31AE7319F0F87700B144BE /* BlunchPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31AE7219F0F87700B144BE /* BlunchPickerView.m */; };
+		AB31AE7519F12E0D00B144BE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31AE7419F12E0D00B144BE /* MessageUI.framework */; };
 		ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */; };
 		ABB2C95519EBDFA000EB2CE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABB2C95419EBDFA000EB2CE6 /* Info.plist */; };
 		ABB2C95819EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB31AE7119F0F87700B144BE /* BlunchPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchPickerView.h; sourceTree = "<group>"; };
+		AB31AE7219F0F87700B144BE /* BlunchPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchPickerView.m; sourceTree = "<group>"; };
+		AB31AE7419F12E0D00B144BE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchCheckInViewController.h; sourceTree = "<group>"; };
 		ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchCheckInViewController.m; sourceTree = "<group>"; };
 		ABB2C95419EBDFA000EB2CE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB31AE7519F12E0D00B144BE /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB31AE7619F12EAB00B144BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB31AE7419F12E0D00B144BE /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABA7614A19E9B09200822A77 /* Ressource */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +111,7 @@
 		ABD8354319E9185D00509FE3 = {
 			isa = PBXGroup;
 			children = (
+				AB31AE7619F12EAB00B144BE /* Frameworks */,
 				ABD8354E19E9185D00509FE3 /* Blunch */,
 				ABD8356819E9185D00509FE3 /* BlunchTests */,
 				ABD8354D19E9185D00509FE3 /* Products */,
@@ -123,6 +138,8 @@
 				ABD8357B19E99E4B00509FE3 /* BlunchHistoryTableViewCell.h */,
 				ABD8357C19E99E4B00509FE3 /* BlunchHistoryTableViewCell.m */,
 				ABD8355919E9185D00509FE3 /* Main.storyboard */,
+				AB31AE7119F0F87700B144BE /* BlunchPickerView.h */,
+				AB31AE7219F0F87700B144BE /* BlunchPickerView.m */,
 				ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */,
 				ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */,
 				ABB2C95619EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.h */,
@@ -267,6 +284,7 @@
 			files = (
 				ABD8357D19E99E4B00509FE3 /* BlunchHistoryTableViewCell.m in Sources */,
 				ABB2C95819EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m in Sources */,
+				AB31AE7319F0F87700B144BE /* BlunchPickerView.m in Sources */,
 				ABD8355519E9185D00509FE3 /* AppDelegate.m in Sources */,
 				ABD8357A19E96F2D00509FE3 /* BlunchHistoryTableViewController.m in Sources */,
 				ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */,

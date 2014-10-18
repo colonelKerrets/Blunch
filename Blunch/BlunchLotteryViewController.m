@@ -7,15 +7,70 @@
 //
 
 #import "BlunchLotteryViewController.h"
+#import <MessageUI/MessageUI.h>
 
 @interface BlunchLotteryViewController ()
 
 @property (strong, nonatomic) NSArray *blunchNames;
+@property (strong, nonatomic) NSArray *emailTitle;
+@property (strong, nonatomic) NSArray *messageBody;
+@property (strong, nonatomic) NSArray *toRecipents;
 @property (weak, nonatomic) IBOutlet UIPickerView *lotteryPicker;
 
 @end
 
+
 @implementation BlunchLotteryViewController
+
+- (IBAction)showEmail:(id)sender {
+    // Email Subject
+    NSString *emailTitle = @"Test Email";
+    // Email Content
+    NSString *messageBody = @"<h1>Learning iOS Programming!</h1>"; // Change the message body to HTML
+    // To address
+    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:YES];
+    [mc setToRecipients:toRecipents];
+    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+    
+
+  
+}
+
+
+#pragma mark - MFMailComposeViewControllerDelegate
+
+- (void) mailComposeController:(MFMailComposeViewController *)composer didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    //[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
 
 #pragma mark - UIPickerViewDataSource
 
