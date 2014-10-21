@@ -53,6 +53,7 @@
     
     switch (result)
     {
+            //TODO: Just for Simulator. Remove Alert when viewing on phone. 
         case MFMailComposeResultCancelled:
             NSLog(@"Mail cancelled");
             [[[UIAlertView alloc] initWithTitle:@"Email sent" message:@"to xxx@se.de" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
