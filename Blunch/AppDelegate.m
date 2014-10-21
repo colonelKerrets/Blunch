@@ -31,9 +31,6 @@
         NSLog(@"Recieved Notification %@",localNotif);
     }
     
-    
-
-    
     return YES;
 }
 
@@ -70,15 +67,15 @@
 
     
     // trigger notification only every Wed
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 
 
-    NSDateComponents *componentsForFireDate = [calendar components:(NSYearCalendarUnit |
-                                                                    NSWeekCalendarUnit |
-                                                                    NSHourCalendarUnit |
-                                                                    NSMinuteCalendarUnit|
-                                                                    NSSecondCalendarUnit |
-                                                                    NSWeekdayCalendarUnit)
+    NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear |
+                                                                    NSCalendarUnitWeekOfMonth |
+                                                                    NSCalendarUnitHour |
+                                                                    NSCalendarUnitMinute|
+                                                                    NSCalendarUnitSecond |
+                                                                    NSCalendarUnitWeekday)
                                                           fromDate:[NSDate date]];
     
     [componentsForFireDate setWeekday: 4] ; //for fixing Sunday
@@ -90,18 +87,24 @@
     // Create own in app notification
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
     localNotif.timeZone = [NSTimeZone defaultTimeZone];
-    localNotif.fireDate = [calendar dateFromComponents:componentsForFireDate];
-    localNotif.repeatInterval = NSWeekCalendarUnit;
+    
+    
+    // ONLY FOR DEMO!!!!
+    localNotif.fireDate = [[NSDate date] dateByAddingTimeInterval:60];
+
+    // Please comment if only WED is desired.
+//    localNotif.fireDate = [calendar dateFromComponents:componentsForFireDate];
+//    localNotif.repeatInterval = kCFCalendarUnitWeekday;
     
 
     // Notification details TODO:
-    localNotif.alertBody = @"Let's see what it is";
+    localNotif.alertBody = @"Happy Blunch Notification";
     // Set the action button
     localNotif.alertAction = @"OK";
     
     
     // Specify custom data for the notification
-    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"Hallo erstmal" forKey:@"someKey"];
+    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"HI" forKey:@"someKey"];
     localNotif.userInfo = infoDict;
     
     // Schedule the notification

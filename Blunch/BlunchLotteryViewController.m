@@ -48,16 +48,25 @@
 
 - (void) mailComposeController:(MFMailComposeViewController *)composer didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
+    
     switch (result)
     {
         case MFMailComposeResultCancelled:
-            NSLog(@"Mail cancelled");
+            [[[UIAlertView alloc] initWithTitle:@"Oooops"
+                                        message:@"Are you sure? ;)"
+                                       delegate:nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil] show];
             break;
         case MFMailComposeResultSaved:
             NSLog(@"Mail saved");
             break;
         case MFMailComposeResultSent:
-            NSLog(@"Mail sent");
+            [[[UIAlertView alloc] initWithTitle:@"Awesome"
+                                        message:@"Thanks for sending the mail."
+                                       delegate:nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil] show];
             break;
         case MFMailComposeResultFailed:
             NSLog(@"Mail sent failure: %@", [error localizedDescription]);
@@ -67,7 +76,7 @@
     }
     
     // Close the Mail Interface
-    //[self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 
