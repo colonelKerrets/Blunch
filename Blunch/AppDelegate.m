@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    // Do all the notifcation foo
+    [self configureNotifications];
+    
+    
+    NSLog(@"didFinishLaunchingWithOptions called");
+    
+    
+    // Handle launching from a notification
+    UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotif) {
+        NSLog(@"Recieved Notification %@",localNotif);
+    }
+    
+    
+
     
     return YES;
 }
@@ -42,5 +58,66 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Calling notifications for Wed
+
+- (void)configureNotifications
+{
+    // Handle permission so that the user get's the permission alert.
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil]];
+    }
+
+    
+    // trigger notification only every Wed
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+
+
+    NSDateComponents *componentsForFireDate = [calendar components:(NSYearCalendarUnit |
+                                                                    NSWeekCalendarUnit |
+                                                                    NSHourCalendarUnit |
+                                                                    NSMinuteCalendarUnit|
+                                                                    NSSecondCalendarUnit |
+                                                                    NSWeekdayCalendarUnit)
+                                                          fromDate:[NSDate date]];
+    
+    [componentsForFireDate setWeekday: 4] ; //for fixing Sunday
+    [componentsForFireDate setHour: 8] ; //for fixing 8PM hour
+    [componentsForFireDate setMinute:0] ;
+    [componentsForFireDate setSecond:0] ;
+    
+
+    // Create own in app notification
+    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+    localNotif.timeZone = [NSTimeZone defaultTimeZone];
+    localNotif.fireDate = [calendar dateFromComponents:componentsForFireDate];
+    localNotif.repeatInterval = NSWeekCalendarUnit;
+    
+
+    // Notification details TODO:
+    localNotif.alertBody = @"Let's see what it is";
+    // Set the action button
+    localNotif.alertAction = @"OK";
+    
+    
+    // Specify custom data for the notification
+    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"Hallo erstmal" forKey:@"someKey"];
+    localNotif.userInfo = infoDict;
+    
+    // Schedule the notification
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
+    
+}
+
+
+- (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)notif {
+    // Handle the notificaton when the app is running
+    NSLog(@"Recieved Notification %@",notif);
+    
+    
+    
+    NSLog(@"didReceiveLocalNotification called");
+}
+
 
 @end
