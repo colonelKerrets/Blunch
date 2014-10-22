@@ -35,29 +35,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blunch/BlunchLotteryViewController.h"
-            timestampString = "435275189.761879"
+            filePath = "BlunchHistoryTableViewController.m"
+            timestampString = "435708930.584035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "@interface BlunchLotteryViewController"
-            landmarkType = "2">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blunch/BlunchRegistrationViewController.m"
-            timestampString = "435705836.931612"
+            filePath = "BlunchHistoryTableViewController.m"
+            timestampString = "435708930.584035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-keyboardWillShow"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-pressStart"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -67,13 +67,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blunch/BlunchRegistrationViewController.m"
-            timestampString = "435705941.328483"
+            filePath = "Blunch/BlunchLotteryViewController.m"
+            timestampString = "435710306.297973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-setViewMovedUp:"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-showEmail:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
