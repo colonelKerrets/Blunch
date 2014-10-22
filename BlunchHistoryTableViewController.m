@@ -18,6 +18,15 @@
     [super viewDidLoad];
     self.navigationController.title = @"History";
     
+
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.leftBarButtonItem.enabled = NO;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Start"
+                                                                              style:UIBarButtonItemStyleDone
+                                                                             target:self
+                                                                             action:@selector(pressStart)];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -25,6 +34,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void) pressStart {
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 //- (void)viewWillAppear:(BOOL)animated {}
 //
 //
@@ -37,19 +51,36 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 3;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    switch (section) {
+        case 0:
+            return @"Januar";
+            break;
+        case 1:
+            return @"Feb";
+            break;
+        case 2:
+            return @"March";
+            break;
+        case 3:
+            return @"Januar";
+            break;
+            
+        default:
+            break;
+    }
+    
     return [NSString stringWithFormat:@"%li", (long)section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return 7;
 }
 
 
@@ -57,11 +88,79 @@
     UITableViewCell *blubber = [tableView dequeueReusableCellWithIdentifier:@"blunchHistoryTableViewCell" forIndexPath:indexPath];
     BlunchHistoryTableViewCell *cell = (BlunchHistoryTableViewCell *) blubber;
     
-    //TODO: Hier weiter machen
-    cell.dayLabel.text = @"X";
-    cell.monthLabel.text = @"Month";
-    cell.nameLabel.text = @"MUSTERNAME";
-    // Configure the cell...
+    
+    if (indexPath.section == 0) {
+        
+        switch (indexPath.row) {
+            case 0:
+                cell.dayLabel.text = @"X";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 1:
+                cell.dayLabel.text = @"Xakdsjka";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 2:
+                cell.dayLabel.text = @"Xlkklklkl";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                
+                break;
+            default:
+                break;
+        }
+    } else if (indexPath.section == 1) {
+        
+        switch (indexPath.row) {
+            case 0:
+                cell.dayLabel.text = @"X";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 1:
+                cell.dayLabel.text = @"Xakdsjka";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 2:
+                cell.dayLabel.text = @"Xlkklklkl";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                
+                break;
+            default:
+                break;
+        }
+        
+
+    } else if (indexPath.section == 2) {
+        
+        switch (indexPath.row) {
+            case 0:
+                cell.dayLabel.text = @"X";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 1:
+                cell.dayLabel.text = @"Xakdsjka";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                break;
+            case 2:
+                cell.dayLabel.text = @"Xlkklklkl";
+                cell.monthLabel.text = @"Month";
+                cell.nameLabel.text = @"MUSTERNAME";
+                
+                break;
+            default:
+                break;
+        }
+        
+        
+    }
+
     
     return cell;
 }
