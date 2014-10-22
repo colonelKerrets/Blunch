@@ -9,6 +9,7 @@
 #import "BlunchRegistrationViewController.h"
 
 @interface BlunchRegistrationViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *sendRegistrationDetailsButton;
 
 @end
 

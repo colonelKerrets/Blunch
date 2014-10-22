@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		AB31AE7319F0F87700B144BE /* BlunchPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31AE7219F0F87700B144BE /* BlunchPickerView.m */; };
 		AB31AE7519F12E0D00B144BE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31AE7419F12E0D00B144BE /* MessageUI.framework */; };
+		AB31AE7919F7A9C400B144BE /* BlunchRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB31AE7819F7A9C400B144BE /* BlunchRegistrationViewController.m */; };
 		ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */; };
 		ABB2C95519EBDFA000EB2CE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABB2C95419EBDFA000EB2CE6 /* Info.plist */; };
 		ABB2C95819EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */; };
 		ABB2C96419ED4C0F00EB2CE6 /* BlunchLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2C96319ED4C0F00EB2CE6 /* BlunchLotteryViewController.m */; };
 		ABB2C96B19ED524800EB2CE6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABB2C96919ED524800EB2CE6 /* Montserrat-Bold.ttf */; };
 		ABB2C96C19ED524800EB2CE6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABB2C96A19ED524800EB2CE6 /* Montserrat-Regular.ttf */; };
+		ABC6E30619F82B1A006FE4DA /* Blunch_Logo640w.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC6E30519F82B1A006FE4DA /* Blunch_Logo640w.png */; };
 		ABD8355219E9185D00509FE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8355119E9185D00509FE3 /* main.m */; };
 		ABD8355519E9185D00509FE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8355419E9185D00509FE3 /* AppDelegate.m */; };
 		ABD8355B19E9185D00509FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD8355919E9185D00509FE3 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		AB31AE7119F0F87700B144BE /* BlunchPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchPickerView.h; sourceTree = "<group>"; };
 		AB31AE7219F0F87700B144BE /* BlunchPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchPickerView.m; sourceTree = "<group>"; };
 		AB31AE7419F12E0D00B144BE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AB31AE7719F7A9C400B144BE /* BlunchRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchRegistrationViewController.h; sourceTree = "<group>"; };
+		AB31AE7819F7A9C400B144BE /* BlunchRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchRegistrationViewController.m; sourceTree = "<group>"; };
 		ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchCheckInViewController.h; sourceTree = "<group>"; };
 		ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchCheckInViewController.m; sourceTree = "<group>"; };
 		ABB2C95419EBDFA000EB2CE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		ABB2C96319ED4C0F00EB2CE6 /* BlunchLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchLotteryViewController.m; sourceTree = "<group>"; };
 		ABB2C96919ED524800EB2CE6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		ABB2C96A19ED524800EB2CE6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ABC6E30519F82B1A006FE4DA /* Blunch_Logo640w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blunch_Logo640w.png; sourceTree = "<group>"; };
 		ABD8354C19E9185D00509FE3 /* Blunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD8355119E9185D00509FE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD8355319E9185D00509FE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		ABA7614A19E9B09200822A77 /* Ressource */ = {
 			isa = PBXGroup;
 			children = (
+				ABC6E30519F82B1A006FE4DA /* Blunch_Logo640w.png */,
 				ABA7614B19E9B0B100822A77 /* Fonts */,
 			);
 			name = Ressource;
@@ -138,12 +144,14 @@
 				ABD8357B19E99E4B00509FE3 /* BlunchHistoryTableViewCell.h */,
 				ABD8357C19E99E4B00509FE3 /* BlunchHistoryTableViewCell.m */,
 				ABD8355919E9185D00509FE3 /* Main.storyboard */,
-				AB31AE7119F0F87700B144BE /* BlunchPickerView.h */,
-				AB31AE7219F0F87700B144BE /* BlunchPickerView.m */,
+				AB31AE7719F7A9C400B144BE /* BlunchRegistrationViewController.h */,
+				AB31AE7819F7A9C400B144BE /* BlunchRegistrationViewController.m */,
 				ABB2C94B19EBD1A500EB2CE6 /* BlunchCheckInViewController.h */,
 				ABB2C94C19EBD1A500EB2CE6 /* BlunchCheckInViewController.m */,
 				ABB2C95619EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.h */,
 				ABB2C95719EBFA4E00EB2CE6 /* BlunchDrawPartnerViewController.m */,
+				AB31AE7119F0F87700B144BE /* BlunchPickerView.h */,
+				AB31AE7219F0F87700B144BE /* BlunchPickerView.m */,
 				ABB2C96219ED4C0F00EB2CE6 /* BlunchLotteryViewController.h */,
 				ABB2C96319ED4C0F00EB2CE6 /* BlunchLotteryViewController.m */,
 				ABD8355C19E9185D00509FE3 /* Images.xcassets */,
@@ -232,6 +240,7 @@
 					};
 					ABD8356419E9185D00509FE3 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 6JC42R6838;
 						TestTargetID = ABD8354B19E9185D00509FE3;
 					};
 				};
@@ -260,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC6E30619F82B1A006FE4DA /* Blunch_Logo640w.png in Resources */,
 				ABB2C96C19ED524800EB2CE6 /* Montserrat-Regular.ttf in Resources */,
 				ABB2C96B19ED524800EB2CE6 /* Montserrat-Bold.ttf in Resources */,
 				ABD8355B19E9185D00509FE3 /* Main.storyboard in Resources */,
@@ -290,6 +300,7 @@
 				ABD8357A19E96F2D00509FE3 /* BlunchHistoryTableViewController.m in Sources */,
 				ABB2C94D19EBD1A500EB2CE6 /* BlunchCheckInViewController.m in Sources */,
 				ABB2C96419ED4C0F00EB2CE6 /* BlunchLotteryViewController.m in Sources */,
+				AB31AE7919F7A9C400B144BE /* BlunchRegistrationViewController.m in Sources */,
 				ABD8355219E9185D00509FE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,13 +424,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Markus Kopf (2RRJ3L3U97)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tanja Oberst (Z9XW7AXRK9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Blunch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2d7bd0b9-2e93-46ce-86db-215f2b05dc0e";
+				PROVISIONING_PROFILE = "67ab8e68-ee54-4407-8a79-797efccf12b0";
 			};
 			name = Debug;
 		};
@@ -428,13 +439,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Markus Kopf (2RRJ3L3U97)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tanja Oberst (Z9XW7AXRK9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Blunch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2d7bd0b9-2e93-46ce-86db-215f2b05dc0e";
+				PROVISIONING_PROFILE = "67ab8e68-ee54-4407-8a79-797efccf12b0";
 			};
 			name = Release;
 		};
