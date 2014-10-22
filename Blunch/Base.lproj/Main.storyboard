@@ -722,12 +722,6 @@
                                     <segue destination="eaB-Ai-iTc" kind="push" id="fG6-1Q-Cpd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blunch_Logo640w.png" translatesAutoresizingMaskIntoConstraints="NO" id="pmZ-AC-fg9">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="84" y="85" width="206" height="79"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -760,7 +754,6 @@
                                 <exclude reference="IRq-3V-3rn"/>
                                 <exclude reference="9MH-a4-r64"/>
                                 <exclude reference="Ig2-6k-9WU"/>
-                                <exclude reference="pmZ-AC-fg9"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="FOp-B8-9Lc"/>
@@ -789,7 +782,6 @@
                                 <include reference="IRq-3V-3rn"/>
                                 <include reference="9MH-a4-r64"/>
                                 <include reference="Ig2-6k-9WU"/>
-                                <include reference="pmZ-AC-fg9"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="FOp-B8-9Lc"/>
@@ -838,7 +830,4 @@
             <point key="canvasLocation" x="1996.5" y="1002"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Blunch_Logo640w.png" width="640" height="250"/>
-    </resources>
 </document>

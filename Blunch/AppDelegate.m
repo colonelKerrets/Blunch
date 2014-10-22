@@ -20,7 +20,7 @@
 
     // Do all the notifcation foo
     [self configureNotifications];
-    
+    [NSThread sleepForTimeInterval:2];
     
     NSLog(@"didFinishLaunchingWithOptions called");
     
