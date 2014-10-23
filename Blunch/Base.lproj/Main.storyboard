@@ -302,6 +302,9 @@
                                         <exclude reference="yvI-Co-9vO"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="ZgV-ND-BLB" kind="push" id="mUI-Sh-wVf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -927,4 +930,7 @@
             <point key="canvasLocation" x="1996.5" y="1002"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mUI-Sh-wVf"/>
+    </inferredMetricsTieBreakers>
 </document>
