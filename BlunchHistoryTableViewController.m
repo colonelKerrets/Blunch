@@ -59,16 +59,13 @@
 {
     switch (section) {
         case 0:
-            return @"Januar";
+            return @"August";
             break;
         case 1:
-            return @"Feb";
+            return @"September";
             break;
         case 2:
-            return @"March";
-            break;
-        case 3:
-            return @"Januar";
+            return @"October";
             break;
             
         default:
@@ -80,7 +77,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 7;
+    return 3;
 }
 
 
@@ -93,19 +90,19 @@
         
         switch (indexPath.row) {
             case 0:
-                cell.dayLabel.text = @"X";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"6";
+                cell.monthLabel.text = @"Aug";
+                cell.nameLabel.text = @"Jacky";
                 break;
             case 1:
-                cell.dayLabel.text = @"Xakdsjka";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"20";
+                cell.monthLabel.text = @"Aug";
+                cell.nameLabel.text = @"Thiago";
                 break;
             case 2:
-                cell.dayLabel.text = @"Xlkklklkl";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"27";
+                cell.monthLabel.text = @"Aug";
+                cell.nameLabel.text = @"Emil";
                 
                 break;
             default:
@@ -115,19 +112,19 @@
         
         switch (indexPath.row) {
             case 0:
-                cell.dayLabel.text = @"X";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"3";
+                cell.monthLabel.text = @"Sept";
+                cell.nameLabel.text = @"Sara";
                 break;
             case 1:
-                cell.dayLabel.text = @"Xakdsjka";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"10";
+                cell.monthLabel.text = @"Sept";
+                cell.nameLabel.text = @"Eva";
                 break;
             case 2:
-                cell.dayLabel.text = @"Xlkklklkl";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"24";
+                cell.monthLabel.text = @"Sept";
+                cell.nameLabel.text = @"Nate";
                 
                 break;
             default:
@@ -139,19 +136,19 @@
         
         switch (indexPath.row) {
             case 0:
-                cell.dayLabel.text = @"X";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"1";
+                cell.monthLabel.text = @"Oct";
+                cell.nameLabel.text = @"Caroline";
                 break;
             case 1:
-                cell.dayLabel.text = @"Xakdsjka";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"8";
+                cell.monthLabel.text = @"Oct";
+                cell.nameLabel.text = @"Clara";
                 break;
             case 2:
-                cell.dayLabel.text = @"Xlkklklkl";
-                cell.monthLabel.text = @"Month";
-                cell.nameLabel.text = @"MUSTERNAME";
+                cell.dayLabel.text = @"15";
+                cell.monthLabel.text = @"Oct";
+                cell.nameLabel.text = @"Charles";
                 
                 break;
             default:

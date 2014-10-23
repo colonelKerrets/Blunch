@@ -28,9 +28,9 @@
 
 - (IBAction)showEmail:(id)sender {
     // Email Subject
-    NSString *emailTitle = @"Test Email";
+    NSString *emailTitle = @"Blunch meeting point";
     // Email Content
-    NSString *messageBody = @"<h1>Learning iOS Programming!</h1>"; // Change the message body to HTML
+    NSString *messageBody = @"<h1>Looking forward to meeting you for Blunch today!</h1><p>When:</p><p>Where:</p>"; // Change the message body to HTML
     // To address
     
     NSInteger row = [self.lotteryPicker selectedRowInComponent:0];
@@ -59,10 +59,10 @@
     switch (result)
     {
         case MFMailComposeResultCancelled:
-            [[[UIAlertView alloc] initWithTitle:@"Oooops"
+            [[[UIAlertView alloc] initWithTitle:@"Cancel"
                                         message:@"Are you sure? ;)"
                                        delegate:self
-                              cancelButtonTitle:@"OK"
+                              cancelButtonTitle:@"Yes, cancel!"
                               otherButtonTitles:nil] show];
             break;
         case MFMailComposeResultSaved:
@@ -70,7 +70,7 @@
             break;
         case MFMailComposeResultSent:
             [[[UIAlertView alloc] initWithTitle:@"Awesome"
-                                        message:@"Thanks for sending the mail."
+                                        message:@"The reply will be sent to your email adress you signed up with."
                                        delegate:self
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil] show];
@@ -142,19 +142,29 @@
     self.alreadyChoosen = NO;
     
     
-    self.myData = @{@"Tanja": @"tanja.oberst@foo.gmx",
-                    @"Ida": @"Ida@foo.gmx",
-                    @"Sandra": @"sandra@foo.gmx",
-                    @"Jonas": @"Jonas@foo.gmx"};
+    self.myData = @{@"Jonas": @"jonas.jerlstrom@hyperisland.se",
+                    @"Ida": @"ida.reimersh@hyperisland.se",
+                    @"Ali": @"ali.rodsari@hyperisland.se",
+                    @"Unni": @"unni.lindahl@hyperisland.se",
+                    @"Raquel": @"raquel.pisetta@hyperisland.se",
+                    @"Darryl": @"darryl.east@hyperisland.se",
+                    @"Tage": @"markus.winberg@hyperisland.se",
+                    @"Doyeon": @"mdoyeon.kim@hyperisland.se",
+                    @"Sara": @"sara.bernhardsson@hyperisland.se",
+                    @"Sandra": @"sandra.oster@hyperisland.se",
+                    @"Fritz": @"fridgeir.asgeirsson@hyperisland.se",
+                    @"Paul": @"paul.nino@hyperisland.se",
+                    @"Madeleine": @"madeleine.melcher@hyperisland.se",
+                    @"Ejay": @"elaine.dagdayan@hyperisland.se",
+                    @"Petter": @"petter.andersson@hyperisland.se",
+                    @"Max": @"max.stralka@hyperisland.se",
+                    @"Sylvia": @"sylvia.dickoh@hyperisland.se",
+                    @"Johanna": @"johanna.bulling@hyperisland.se"};
     
 
     
     
-    self.blunchNames = @[@"Tanja", @"Ida", @"Sandra", @"Jonas", @"Paul", @"Petter"];
-    
-    
-    
-    self.blunchNames = [self.blunchNames arrayByAddingObjectsFromArray: self.blunchNames];
+ 
     
 }
 
